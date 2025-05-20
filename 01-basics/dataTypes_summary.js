@@ -12,8 +12,8 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(typeof id)
-console.log(typeof anotherId)
+// console.log(typeof id)
+// console.log(typeof anotherId)
 
 // console.log(id === anotherId);
 // const bigNumber = 3456543576654356754n
@@ -24,7 +24,26 @@ console.log(typeof anotherId)
 
 // Array, Objects, Functions
 
+// const heros1 = ["shaktiman", "naagraj", "doga"]; 
+// heros1.push("dilse");      // ✅ Works
+// heros1 = ["newhero"];      // ❌ Error: Assignment to constant variable
+
+
+
+let heros2 = ["shaktiman", "naagraj", "doga"];
+heros2 = ["newhero"];      // ✅ Works
+console.log(heros2)
+// let heros2 = ["another"];  // ❌ SyntaxError: Identifier 'heros' has already been declared
+
+var heros3 = ["shaktiman", "naagraj", "doga"];
+heros3 = ["newhero"];      // ✅ Works
+var heros3 = ["another"];  // ✅ Allowed, can cause confusion
+
+
 const heros = ["shaktiman", "naagraj", "doga"];
+
+
+
 let myObj = {
     name: "hitesh",
     age: 22,
