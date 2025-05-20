@@ -19,3 +19,5 @@ console.log(typeof b)
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
+
+//this is the changes I have made after save 
